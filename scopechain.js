@@ -7,9 +7,10 @@ function garage() {
         var cycle="Hero";
         console.log(car);
         console.log(cycle);
-        console.log(Bike);
+        console.log(bike);
     }
     parking();
 }
 console.log(car);
+
 garage();
