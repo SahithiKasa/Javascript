@@ -39,13 +39,13 @@ var obj = {
     studentname: "John",
     age: 15,
     getStudentdetails: () => {
-        let localthis = this;
+        let localthis = this;    //it is shown as a window (global scole -default)
         console.log("student level context", localthis);
         console.log(localthis.age);
     },
 
     getteacherdetails: function () {
-        let localthis = this;  // refers object itself
+        let localthis = this;  // refers object itself  //it is shown normally
         console.log("teacher level context", localthis);
         console.log(localthis.achivements);
     }
