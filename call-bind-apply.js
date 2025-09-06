@@ -1,8 +1,10 @@
 let student = {
        name : "R.Chandra",
        location : "Andhrapradesh",
-       getStudentDetails : function(){
+       getStudentDetails : function(argument1,argument2){
             console.log(this);  
+            console.log(argument1);
+            console.log(argument2);
        }
 }
 
@@ -38,9 +40,9 @@ let student = {
 
 
 
- student.getStudentDetails.call(JohnStudent);
+ student.getStudentDetails.call(JohnStudent,"34","2kids");
  
- student.getStudentDetails.call(RobertStudent);
+student.getStudentDetails.call(RobertStudent);
 
 
 // function getStudntDetails1(){
@@ -51,7 +53,13 @@ let student = {
 
 
 
-console.log(firststudent);
+//console.log(firststudent);
+student.getStudentDetails.apply(JohnStudent,["34","2kids"]);
+
+//console.log(student.getStudentDetails.bind(JohnStudent,"34","2kids"));
+let newStudentDetails=student.getStudentDetails.bind(RobertStudent,"34","2kids");
+newStudentDetails();
+
 
 // Car
 // : 
