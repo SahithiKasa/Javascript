@@ -79,7 +79,8 @@ for (var property in bookDetails) {
     console.log(`Property Name : ${property}`);
 
 
-    console.log(`value of Property : ${bookDetails[property]}`);//Take the key stored inside propety and fetch that value from bookDetails object//
+    console.log(`value of Property : ${bookDetails[property]}`);//Take the key stored inside propety 
+    // and fetch that value from bookDetails object//
 
 }
 
