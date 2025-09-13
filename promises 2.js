@@ -99,3 +99,23 @@ fruit.then(function(){
 
 
 
+let my_Promise = new fn_mis_Promise(
+    function(myName){
+       return myName;
+     },function(){
+         return "one more success message"
+     },
+     function(){
+        return "one more success message"
+    },
+    function(){
+        return "one more success message"
+    },
+    function(){
+        return "one more success message"
+    },
+  function(){
+        return "one more success message"
+   }
+);  
+my_Promise();
